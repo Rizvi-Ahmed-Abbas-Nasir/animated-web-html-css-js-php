@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hapros Global</title>
+    <!-- favicons Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="ogenix HTML 5 Template " />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/nouislider/nouislider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/nouislider/nouislider.pips.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/ogenix-icons/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/tiny-slider/tiny-slider.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/ogenix.css" />
+    <link rel="stylesheet" href="assets/css/ogenix-responsive.css" />
+  </head>
+
+  <style>
+    .marquee_container {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .Marquees {
+      overflow-x: hidden;
+    }
+    .Marquee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170vw;
+    }
+    .marquee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      width: 5rem;
+      /*line 43 is very important. since we have 16 items, width of the Marquee which is 200vw must be devided between them. which turns out to be 12.5vw*/
+      margin: 10px;
+      border-radius: 15px;
+    }
+    .Item {
+      width: 100%;
+      height: 100%;
+    }
+    .marquee_image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .FirstRow {
+      animation: Scroll 30s linear infinite;
+    }
+
+    @keyframes Scroll {
+      0% {
+        transform: translateX(-50vw);
+        -webkit-transform: translateX(-50vw);
+      }
+      100% {
+        transform: translateX(50vw);
+        -webkit-transform: translateX(50vw);
+      }
+    }
+  </style>
+
+  <body class="custom-cursor">
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+      <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+
+    <div class="page-wrapper">
+      <header class="main-header-two" style="width: 100%">
+        <nav class="main-menu main-menu-two">
+          <div class="main-menu-two__wrapper" style="background-color: #418e7f">
+            <div class="container">
+              <div class="main-menu-two__wrapper-inner">
+                <div class="main-header-two__social">
+                  <div class="main-header-two__logo">
+                    <a href="index.html"
+                      ><img
+                        style="width: 8rem"
+                        src="assets/images/logo/hapros_logo.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="main-menu-two__main-menu-box">
+                  <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                  ></a>
+                  <ul class="main-menu__list">
+                    <li class="current">
+                      <a href="index.html">Home </a>
+                    </li>
+                    <li class="">
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Products</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="./pages/products/beans-pulses.html"
+                            >BEANS & PULSES</a
+                          >
+                        </li>
+                        <li>
+                          <a href="./pages/products/wholeSpices.html"
+                            >WHOLE SPICES</a
+                          >
+                        </li>
+                        <li>
+                          <a href="./pages/products/rice.html">RICE</a>
+                        </li>
+                        <li>
+                          <a href="./pages/products/superFoods.html"
+                            >SUPERFOODS</a
+                          >
+                        </li>
+                        <li>
+                          <a href="./pages/products/oilSeeds.html">OILSEEDS</a>
+                        </li>
+                        <li>
+                          <a href="./pages/products/driedFruits.html"
+                            >DRIEDFRUITS</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a href="#">Our Heritage</a>
+                    </li>
+                    <li class="">
+                      <a href="#">News & Insights</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="stricky-header stricked-menu main-menu main-menu-two">
+        <div class="sticky-header__content"></div>
+        <!-- /.sticky-header__content -->
+      </div>
+      <!-- /.stricky-header -->
+
+      <!--Main Slider Start-->
+      <section
+        class="main-slider-two clearfix"
+        style="min-height: 90svh; overflow: hidden"
+      >
+        <div
+          class="swiper-container thm-swiper__slider"
+          data-swiper-options='{
+                "slidesPerView": 1,
+                "loop": true,
+                "effect": "fade",
+                "pagination": {
+                "el": "#main-slider-pagination",
+                "type": "bullets",
+                "clickable": true
+                },
+                "navigation": {
+                "nextEl": "#home_swiper-button-next",
+                "prevEl": "#home_swiper-button-prev"
+                },
+                "autoplay": {
+                "delay": 5000
+                }}'
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="image-layer-two"
+                style="
+                  background-image: url(assets/images/backgrounds/Banner-1.jpg);
+                "
+              ></div>
+              <!-- /.image-layer -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="main-slider-two__content">
+                      <!-- <div class="main-slider-two__shape-1 zoom-fade-2">
+                        <img
+                          src="assets/images/backgrounds/main-slider-2-1.jpg"
+                          alt=""
+                        />
+                      </div> -->
+                      <h4 class="main-slider-two__sub-title">
+                        From humble beginnings to global leadership in food
+                        ingredients.
+                      </h4>
+                      <h2 class="main-slider-two__title">
+                        Your Highest Quality Organic & Conventional Food Partner
+                      </h2>
+                      <div class="main-slider-two__btn-box">
+                        <a
+                          href="about.html"
+                          class="thm-btn main-slider-two__btn-one"
+                          >Explore Our Story</a
+                        >
+                        <a
+                          href="product-details.html"
+                          class="thm-btn main-slider-two__btn-two"
+                          >Browse Products
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="image-layer-two"
+                style="
+                  background-image: url(assets/images/backgrounds/Banner-2.jpg);
+                "
+              ></div>
+              <!-- /.image-layer -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="main-slider-two__content">
+                      <!-- <div class="main-slider-two__shape-1 zoom-fade-2">
+                        <img
+                          src="assets/images/shapes/main-slider-two-shape-1.png"
+                          alt=""
+                        />
+                      </div> -->
+                      <h2 class="main-slider-two__title">
+                        Your Highest Quality Organic & Conventional Food Partner
+                      </h2>
+                      <h4 class="main-slider-two__sub-title">
+                        As a fifth-generation enterprise, we proudly carry
+                        forward a legacy built on trust, resilience, integrity
+                        and excellence.
+                      </h4>
+                      <div class="main-slider-two__btn-box">
+                        <a
+                          href="about.html"
+                          class="thm-btn main-slider-two__btn-one"
+                          >Learn more</a
+                        >
+                        <a
+                          href="product-details.html"
+                          class="thm-btn main-slider-two__btn-two"
+                          >Shop now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="image-layer-two"
+                style="
+                  background-image: url(assets/images/backgrounds/Banner-3.jpg);
+                "
+              ></div>
+              <!-- /.image-layer -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="main-slider-two__content">
+                      <!-- <div class="main-slider-two__shape-1 zoom-fade-2">
+                        <img
+                          src="assets/images/shapes/main-slider-two-shape-1.png"
+                          alt=""
+                        />
+                      </div> -->
+                      <h2 class="main-slider-two__title">
+                        Your Highest Quality Organic & Conventional Food Partner
+                      </h2>
+                      <h4 class="main-slider-two__sub-title">
+                        With a robust supply chain spanning every corner of
+                        India, Hapros delivers excellence from the field to your
+                        warehouse.
+                      </h4>
+                      <div class="main-slider-two__btn-box">
+                        <a
+                          href="about.html"
+                          class="thm-btn main-slider-two__btn-one"
+                          >Learn more</a
+                        >
+                        <a
+                          href="product-details.html"
+                          class="thm-btn main-slider-two__btn-two"
+                          >Shop now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="image-layer-two"
+                style="
+                  background-image: url(assets/images/backgrounds/Banner-4.jpg);
+                "
+              ></div>
+              <!-- /.image-layer -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="main-slider-two__content">
+                      <!-- <div class="main-slider-two__shape-1 zoom-fade-2">
+                        <img
+                          src="assets/images/shapes/main-slider-two-shape-1.png"
+                          alt=""
+                        />
+                      </div> -->
+                      <h2 class="main-slider-two__title">
+                        Your Highest Quality Organic & Conventional Food Partner
+                      </h2>
+                      <h4 class="main-slider-two__sub-title">
+                        Our enduring partnerships with farmers, millers, and
+                        suppliers form the backbone of our success.
+                      </h4>
+                      <div class="main-slider-two__btn-box">
+                        <a
+                          href="about.html"
+                          class="thm-btn main-slider-two__btn-one"
+                          >Learn more</a
+                        >
+                        <a
+                          href="product-details.html"
+                          class="thm-btn main-slider-two__btn-two"
+                          >Shop now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div
+            class="swiper-button-next"
+            id="home_swiper-button-next"
+            style="color: #ffbd3c"
+          ></div>
+          <div
+            class="swiper-button-prev"
+            id="home_swiper-button-prev"
+            style="color: #ffbd3c"
+          ></div>
+          <div class="swiper-pagination" id="main-slider-pagination"></div>
+        </div>
+      </section>
+      <!--Main Slider End-->
+
+      <!--Counter One Start-->
+      <section class="counter-one">
+        <div class="counter-one__bg"></div>
+        <div class="container" style="max-width: 95%">
+          <ul class="counter-one__inner list-unstyled">
+            <li class="counter-one__single">
+              <div class="counter-one__icon">
+                <i class="icon-customer-service"></i>
+              </div>
+              <div class="counter-one__content count-box">
+                <h3 class="count-text" data-stop="45000" data-speed="1500">
+                  45000+
+                </h3>
+                <p class="counter-one__text">Clients Served</p>
+              </div>
+            </li>
+
+            <li class="counter-one__single">
+              <div class="counter-one__icon">
+                <i class="icon-farmer-1"></i>
+              </div>
+              <div class="counter-one__content count-box">
+                <h3 class="count-text" data-stop="38" data-speed="1500">00</h3>
+                <p class="counter-one__text">
+                  Million Tonnes <br />
+                  of Agri Products <br />
+                  Supplied
+                </p>
+              </div>
+            </li>
+
+            <li class="counter-one__single">
+              <div class="counter-one__icon">
+                <i class="icon-agriculture"></i>
+              </div>
+              <div class="counter-one__content count-box">
+                <h3 class="count-text" data-stop="100" data-speed="1500">00</h3>
+                <p class="counter-one__text">
+                  Supply Chain <br />
+                  Partners
+                </p>
+              </div>
+            </li>
+
+            <li class="counter-one__single">
+              <div class="counter-one__icon">
+                <i class="icon-trophy"></i>
+              </div>
+              <div class="counter-one__content count-box">
+                <h3 class="count-text" data-stop="30" data-speed="1500">00</h3>
+                <p class="counter-one__text">
+                  Affiliated warehousing <br />
+                  facilities including <br />cold storage, and <br />
+                  port warehousing.
+                </p>
+              </div>
+            </li>
+
+            <li class="counter-one__single">
+              <div class="counter-one__icon">
+                <i class="icon-trophy"></i>
+              </div>
+              <div class="counter-one__content count-box">
+                <h3 class="count-text" data-stop="20" data-speed="1500">00</h3>
+                <p class="counter-one__text">exporting to countries</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Counter One End-->
+
+      <!--About Two Start-->
+      <!-- DONE -->
+      <section class="about-two" style="margin-top: 6rem">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="about-two__left">
+                <div class="section-title text-left">
+                  <span class="section-title__tagline">About Us </span>
+                  <h2 class="section-title__title">Our Legacy</h2>
+                </div>
+                <p class="about-two__text">
+                  Since 1899, Hapros Global has been at the forefront of the
+                  agricultural industry, delivering high-quality food
+                  ingredients worldwide. Our journey started with Ganpat Pasu, a
+                  visionary from Gujarat, and over five generations, we have
+                  expanded into sourcing, processing, trading, and exporting to
+                  over 20 countries.
+                </p>
+
+                <div class="about-two__btn-box" style="margin-top: 2rem">
+                  <a href="about.html" class="about-two__btn thm-btn"
+                    >About Us</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="about-two__right">
+                <div
+                  class="about-two__img-box wow slideInRight"
+                  data-wow-delay="100ms"
+                  data-wow-duration="2500ms"
+                >
+                  <div class="about-two__img-1">
+                    <img src="assets/images/about2.jpg" alt="" />
+                  </div>
+                  <!-- <div class="about-two__img-2">
+                    <img src="assets/images/resources/about-2.jpg" alt="" />
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About Two End-->
+
+      <!-- <h1 style="text-align: center; margin-top: 5rem">
+        OUR STORY SECTION TO BE ADDED THERE
+      </h1> -->
+
+      <!--About One Start-->
+      <section
+        class="about-one"
+        style="background-color: #e3f0e1; margin-top: 4rem; margin-bottom: 6rem"
+      >
+        <div class="container">
+          <div class="row" style="display: flex; align-items: center">
+            <div class="col-xl-6">
+              <div class="about-two__left">
+                <div
+                  class="about-two__img-box wow slideInLeft"
+                  data-wow-delay="100ms"
+                  data-wow-duration="2500ms"
+                >
+                  <div class="about-two__img-1">
+                    <img src="assets/images/resources/about-2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="about-one__right">
+                <div class="section-title text-left">
+                  <h2 class="section-title__title">Our Story</h2>
+                </div>
+                <p
+                  class="about-one__text-2"
+                  style="color: black; font-size: 20px"
+                >
+                  "Hapros Global, founded in 1899 by Ganpat Pasu, has built
+                  strong partnerships with farmers over five generations to
+                  promote fair trade and sustainable practices. As we expand
+                  globally, our commitment to quality and ethical sourcing
+                  remains steadfast. We continue this legacy with a focus on a
+                  brighter, sustainable future for generations to come."
+                </p>
+              </div>
+
+              <div class="about-two__btn-box" style="margin-top: 2rem">
+                <a class="about-two__btn thm-btn">Explore our Heritage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About One End-->
+
+      <!--News One Start-->
+      <section class="news-one" style="margin-top: 8rem">
+        <div class="container">
+          <div class="section-title text-center">
+            <!-- <span class="section-title__tagline">From the Blog Posts</span> -->
+            <h2 class="section-title__title">Our Products</h2>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-6 col-md-6 filter-item fresh vegetables"
+            >
+              <div class="hot-products__single">
+                <div class="hot-products__single-inner">
+                  <div class="hot-products__img-box">
+                    <div class="hot-products__img">
+                      <img src="assets/prodcuts/splitPulses.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="hot-products__content">
+                    <h3 class="hot-products__title">
+                      <a href="product-details.html">BEANS & PULSES </a>
+                    </h3>
+                    <p style="margin-bottom: 0.5rem">
+                      Pigeon Pea split & Skinned (Toor Dal), Chickpeas (Kabuli
+                      Chana), Bengal Gram(Chana) & more.
+                    </p>
+                    <div
+                      class="news-one__bottom"
+                      style="justify-content: center"
+                    >
+                      <div class="news-one__read-more">
+                        <a href="news-details.html">See All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-products__icon-boxes">
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Products Two Single End -->
+            <!-- Hot Products Two Single Start -->
+            <div class="col-xl-3 col-lg-6 col-md-6 filter-item fruits fresh">
+              <div class="hot-products__single">
+                <div class="hot-products__single-inner">
+                  <div class="hot-products__img-box">
+                    <div class="hot-products__img">
+                      <img src="assets/prodcuts/Spices.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="hot-products__content">
+                    <h3 class="hot-products__title">
+                      <a>WHOLE SPICES </a>
+                    </h3>
+                    <p style="margin-bottom: 0.5rem">
+                      Cumin, Turmeric, Chilly, Fennel, Coriander, Cloves, Black
+                      Pepper, Nutmeg & more.
+                    </p>
+                    <div
+                      class="news-one__bottom"
+                      style="justify-content: center"
+                    >
+                      <div class="news-one__read-more">
+                        <a href="news-details.html">See All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-products__icon-boxes">
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Products Two Single End -->
+            <!-- Hot Products Two Single Start -->
+            <div
+              class="col-xl-3 col-lg-6 col-md-6 filter-item fresh vegetables"
+            >
+              <div class="hot-products__single">
+                <div class="hot-products__single-inner">
+                  <div class="hot-products__img-box">
+                    <div class="hot-products__img">
+                      <img src="assets/prodcuts/Rice.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="hot-products__content">
+                    <h3 class="hot-products__title">
+                      <a>RICE</a>
+                    </h3>
+                    <p style="margin-bottom: 0.5rem">
+                      Traditional Basmiti (Aged), 1121 Basmati Sella (Aged/New),
+                      1718 Basmati Sella (Aged/New) & more.
+                    </p>
+                    <div
+                      class="news-one__bottom"
+                      style="justify-content: center"
+                    >
+                      <div class="news-one__read-more">
+                        <a href="news-details.html">See All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-products__icon-boxes">
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Products Two Single End -->
+            <!-- Hot Products Two Single Start -->
+            <div class="col-xl-3 col-lg-6 col-md-6 filter-item vegetables">
+              <div class="hot-products__single">
+                <div class="hot-products__single-inner">
+                  <div class="hot-products__img-box">
+                    <div class="hot-products__img">
+                      <img src="assets/prodcuts/millets.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="hot-products__content">
+                    <h3 class="hot-products__title">
+                      <a href="product-details.html">SUPERFOODS</a>
+                    </h3>
+                    <p style="margin-bottom: 0.5rem">
+                      Psylium Seeds, Psylium Husk, Psylium Powder, Moringa Leaf,
+                      Moringa Leaf Powder & more.
+                    </p>
+                    <div
+                      class="news-one__bottom"
+                      style="justify-content: center"
+                    >
+                      <div class="news-one__read-more">
+                        <a href="news-details.html">See All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-products__icon-boxes">
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Products Two Single End -->
+            <!-- Hot Products Two Single Start -->
+            <div class="col-xl-3 col-lg-6 col-md-6 filter-item vegetables">
+              <div class="hot-products__single">
+                <div class="hot-products__single-inner">
+                  <div class="hot-products__img-box">
+                    <div class="hot-products__img">
+                      <img src="assets/prodcuts/sunflower.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="hot-products__content">
+                    <h3 class="hot-products__title">
+                      <a href="product-details.html">OILSEEDS</a>
+                    </h3>
+                    <p style="margin-bottom: 0.5rem">
+                      soyabean sesame seeds, flax seeds, sunflower seeds & more.
+                    </p>
+                    <div
+                      class="news-one__bottom"
+                      style="justify-content: center"
+                    >
+                      <div class="news-one__read-more">
+                        <a href="news-details.html">See All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-products__icon-boxes">
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Products Two Single End -->
+            <!-- Hot Products Two Single Start -->
+            <div class="col-xl-3 col-lg-6 col-md-6 filter-item vegetables">
+              <div class="hot-products__single">
+                <div class="hot-products__single-inner">
+                  <div class="hot-products__img-box">
+                    <div class="hot-products__img">
+                      <img src="assets/prodcuts/dryfruits.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="hot-products__content">
+                    <h3 class="hot-products__title">
+                      <a href="product-details.html">DRIEDFRUITS</a>
+                    </h3>
+                    <p style="margin-bottom: 0.5rem">Raisins cashew & more.</p>
+                    <div
+                      class="news-one__bottom"
+                      style="justify-content: center"
+                    >
+                      <div class="news-one__read-more">
+                        <a href="news-details.html">See All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-products__icon-boxes">
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Products Two Single End -->
+          </div>
+        </div>
+      </section>
+      <!--Blog One End-->
+
+      <!--Banner One Start-->
+      <section class="banner-one">
+        <div class="container">
+          <div class="section-title text-center">
+            <span class="section-title__tagline">Our Services</span>
+            <h2 class="section-title__title">
+              At Hapros Global, we provide an end-to-end service package that
+              ensures quality and reliability throughout the entire supply chain
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6">
+              <div class="banner-one__left">
+                <div
+                  class="banner-one__inner"
+                  style="background-color: rgb(42 144 93)"
+                >
+                  <img
+                    src="./assets/images/icons/ico-sourcing.png"
+                    alt=""
+                    style="width: 2.5rem"
+                  />
+                  <h3 class="banner-one__title" style="margin-bottom: 1rem">
+                    Sourcing
+                  </h3>
+                  <p style="color: #fff">
+                    Sourcing wide range of products worldwide for the
+                    international food industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="banner-one__right">
+                <div
+                  class="banner-one__inner banner-one__inner-2"
+                  style="background-color: rgb(42 144 93)"
+                >
+                  <img
+                    src="./assets/images/icons/ico-process.png"
+                    alt=""
+                    style="width: 2.5rem"
+                  />
+                  <h3 class="banner-one__title" style="margin-bottom: 1rem">
+                    Manufacturing & Processing
+                  </h3>
+                  <p style="color: #fff">
+                    A multi-step protocol ensuring stringiest quality checks at
+                    every step also enabling customization.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 2rem">
+            <div class="col-xl-6 col-lg-6">
+              <div class="banner-one__left">
+                <div
+                  class="banner-one__inner"
+                  style="background-color: rgb(42 144 93)"
+                >
+                  <img
+                    src="./assets/images/icons/ico-trade.png"
+                    alt=""
+                    style="width: 2.5rem"
+                  />
+                  <h3 class="banner-one__title" style="margin-bottom: 1rem">
+                    Trading
+                  </h3>
+                  <p style="color: #fff">
+                    Our traders monitor markets worldwide to source the best
+                    quality products at the most competitive rates.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="banner-one__right">
+                <div
+                  class="banner-one__inner banner-one__inner-2"
+                  style="background-color: rgb(42 144 93)"
+                >
+                  <img
+                    src="./assets/images/icons/ico-logistics.png"
+                    alt=""
+                    style="width: 2.5rem"
+                  />
+                  <h3 class="banner-one__title" style="margin-bottom: 1rem">
+                    Logistics
+                  </h3>
+                  <p style="color: #fff">
+                    Fast and efficient delivery options from our network of
+                    affiliated warehouses and cold storages across the country
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Banner One End-->
+
+      <div class="marquee_container" style="margin-top: 8rem">
+        <div class="section-title text-center">
+          <!-- <span class="section-title__tagline">From the Blog Posts</span> -->
+          <h2 class="section-title__title">Our Certifications</h2>
+        </div>
+
+        <div class="Marquees">
+          <div class="Marquee FirstRow">
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/HALAL-CERTIFIED.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/agricultural-and-processed-food-products-export-development-authority-apeda-vector-logo.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/unnamed.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/spices-board-india-regional-office-gummidipundi-chennai-ministry-of-commerce-a0c525.avif"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/FSSAI-Logo.webp"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/haccp.avif"
+                alt=""
+              />
+            </div>
+
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/HALAL-CERTIFIED.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/agricultural-and-processed-food-products-export-development-authority-apeda-vector-logo.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/unnamed.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/spices-board-india-regional-office-gummidipundi-chennai-ministry-of-commerce-a0c525.avif"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/FSSAI-Logo.webp"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/haccp.avif"
+                alt=""
+              />
+            </div>
+
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/HALAL-CERTIFIED.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/agricultural-and-processed-food-products-export-development-authority-apeda-vector-logo.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/unnamed.png"
+                alt=""
+              />
+            </div>
+            <div class="marquee Item">
+              <img
+                class="marquee_image"
+                src="./assets/images/logo/spices-board-india-regional-office-gummidipundi-chennai-ministry-of-commerce-a0c525.avif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--About One Start-->
+      <section class="about-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="about-one__left">
+                <div
+                  class="about-one__img-box wow slideInLeft"
+                  data-wow-delay="100ms"
+                  data-wow-duration="2500ms"
+                >
+                  <div class="about-one__big-text">ogenix</div>
+                  <div class="about-one__img">
+                    <img src="assets/images/backgrounds/about-4.jpg" alt="" />
+                  </div>
+                  <!-- <div class="about-one__experience-box">
+                    <div class="about-one__experience-icon">
+                      <span class="icon-organic"></span>
+                    </div>
+                    <div class="about-one__experience-text">
+                      <p><span>30</span>Years of experience</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="about-one__right">
+                <div class="section-title text-left">
+                  <span class="section-title__tagline">Our Mission</span>
+                  <h2 class="section-title__title">
+                    Empowering Farmer Communities
+                  </h2>
+                </div>
+
+                <p class="about-one__text-1">
+                  Hapros Global is committed to a sustainable future for food
+                  production. Our journey began in 1899 with Ganpat Pasu's
+                  vision, and over five generations, we have cultivated
+                  partnerships with farmers, embraced sustainable practices, and
+                  expanded our reach to over 20 countries.
+                </p>
+                <p class="about-one__text-2">
+                  At the heart of our success are the farmers. Through close
+                  partnerships, fair trade practices, and educational programs,
+                  we strive to uplift and empower agricultural communities,
+                  ensuring a brighter, more sustainable future for all.
+                </p>
+                <div class="about-one__btn-box">
+                  <a href="about.html" class="about-one__btn thm-btn">
+                    More About Us →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About One End-->
+
+      <!--Site Footer Start-->
+      <footer class="site-footer">
+        <div
+          class="site-footer__bg"
+          style="
+            background-image: url(assets/images/backgrounds/site-footer-bg-img.png);
+          "
+        ></div>
+        <div class="container">
+          <div class="site-footer__top">
+            <div class="row">
+              <div
+                class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                data-wow-delay="100ms"
+              >
+                <div class="footer-widget__column footer-widget__about">
+                  <div class="footer-widget__logo">
+                    <a href="index.html"
+                      ><img src="assets/images/resources/logo-2.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-widget__about-text-box">
+                    <p class="footer-widget__about-text">
+                      We’re Providing Everyday Fresh <br />
+                      and Quality Products.
+                    </p>
+                  </div>
+                  <div class="footer-widget__social-box">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
+                data-wow-delay="200ms"
+              >
+                <div class="footer-widget__column footer-widget__explore">
+                  <div class="footer-widget__title-box">
+                    <h3 class="footer-widget__title">Explore</h3>
+                  </div>
+                  <div class="footer-widget__explore-list-box">
+                    <ul class="footer-widget__explore-list list-unstyled">
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="services.html">Products</a></li>
+                      <li><a href="pricing.html">Services</a></li>
+                      <!-- <li><a href="products.html">New Products</a></li> -->
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                data-wow-delay="300ms"
+              >
+                <div class="footer-widget__column footer-widget__contact">
+                  <div class="footer-widget__title-box">
+                    <h3 class="footer-widget__title">Contact Us</h3>
+                  </div>
+                  <p class="footer-widget__contact-text">
+                    Valentin, Street Road 24, New York, USA - 67452
+                  </p>
+                  <ul class="list-unstyled footer-widget__contact-list">
+                    <li>
+                      <div class="text">
+                        <p>
+                          <a href="tel:928800688960">+92 (8800) 68 - 8960</a>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <p>
+                          <a href="mailto:info@example.com "
+                            >info@example.com</a
+                          >
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="site-footer__bottom-inner">
+                  <div class="site-footer__bottom-left">
+                    <p class="site-footer__bottom-text">
+                      ©️ 2024 Hapros Global. All rights reserved. Developed and
+                      managed by
+                      <a href="https://cleverstudio.in/" target="_blank"
+                        >Clever Studio</a
+                      >
+                    </p>
+                  </div>
+                  <div class="site-footer__bottom-right">
+                    <ul class="list-unstyled site-footer__bottom-menu">
+                      <li><a href="about.html">Terms & Conditions</a></li>
+                      <li><span>/</span></li>
+                      <li><a href="about.html">Privacy Policy</a></li>
+                      <li><span>/</span></li>
+                      <li><a href="about.html">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Site Footer End-->
+    </div>
+    <!-- /.page-wrapper -->
+
+    <div class="mobile-nav__wrapper">
+      <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+      <!-- /.mobile-nav__overlay -->
+      <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"
+          ><i class="fa fa-times"></i
+        ></span>
+
+        <div class="logo-box">
+          <a href="index.html" aria-label="logo image"
+            ><img src="assets/images/resources/logo-1.png" width="104" alt=""
+          /></a>
+        </div>
+        <!-- /.logo-box -->
+        <div class="mobile-nav__container"></div>
+        <!-- /.mobile-nav__container -->
+
+        <ul class="mobile-nav__contact list-unstyled">
+          <li>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:info@haprosglobal.com  ">info@haprosglobal.com </a>
+          </li>
+          <li>
+            <i class="fa fa-phone-alt"></i>
+            <a href="tel:666-888-0000">666 888 0000</a>
+          </li>
+        </ul>
+        <!-- /.mobile-nav__contact -->
+        <div class="mobile-nav__top">
+          <div class="mobile-nav__social">
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-facebook-square"></a>
+            <a href="#" class="fab fa-pinterest-p"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+          <!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__top -->
+      </div>
+      <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <!-- /.search-popup__overlay -->
+      <div class="search-popup__content">
+        <form action="#">
+          <label for="search" class="sr-only">search here</label
+          ><!-- /.sr-only -->
+          <input type="text" id="search" placeholder="Search Here..." />
+          <button type="submit" aria-label="search submit" class="thm-btn">
+            <i class="icon-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"
+      ><i class="icon-up-arrow"></i
+    ></a>
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/jquery.countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
+
+    <!-- template js -->
+    <script src="assets/js/ogenix.js"></script>
+  </body>
+</html>
