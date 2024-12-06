@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+#cookies {
+  bottom: 3rem;
+  right: 3rem;
+  max-width: 36.5rem;
+  background: #fff;
+  padding: 25px 25px 30px 25px;
+  border-radius: 1.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+  display: none;
+  font-family: "Poppins", sans-serif;
+  z-index: 999999;
+  position: fixed;
+}
+.c-overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999998;
+}
+
+#cookies header {
+  color: #101010;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#cookies {
+  margin-top: 1rem;
+}
+
+#cookies svg {
+  width: 60%;
+}
+
+#cookies p {
+  color: #505050;
+  margin: .5rem 0 2rem 0;
+  font-size: 1.2rem;
+}
+
+#cookies p a {
+  color: #505050;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#cookies-btn {
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  background: #101010;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+#cookies button:hover {
+  transform: scale(0.97);
+}
+
+.buttons .item {
+  margin: 0 1rem;
+}
+
+.btn-div a {
+  font-size: 1.2rem;
+  color: #101010;
+}
+
+@media only screen and (max-width: 800px) {
+  html{
+    font-size: 50%;
+  }
+  #cookies svg {
+    width: 50%;
+  }
+  #cookies {
+    bottom: 3rem;
+    max-width: 100%;
+    margin: 0px 2rem;
+    right: 0;
+  }
+  #cookies-btn {
+    padding: 1rem 1.5rem;
+  }
+}

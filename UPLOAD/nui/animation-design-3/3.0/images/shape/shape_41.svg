@@ -1,0 +1,23 @@
+<svg width="194" height="202" viewBox="0 0 194 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="194" height="202">
+<rect x="194" width="202" height="194" transform="rotate(90 194 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M167.5 17.5L182.5 43.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M115.5 16.5L132.5 42.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M59 17L83 41" stroke="#FF1C63" stroke-width="2"/>
+<path d="M9 23L35 41" stroke="#FF1C63" stroke-width="2"/>
+<path d="M167.5 65.5L182.5 91.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M115 66L133 92" stroke="#FF1C63" stroke-width="2"/>
+<path d="M61 68L87 86" stroke="#FF1C63" stroke-width="2"/>
+<path d="M10.5 70.5L38.5 85.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M167.5 115.5L182.5 141.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M116 119L134 143" stroke="#FF1C63" stroke-width="2"/>
+<path d="M12.5 123.5L40.5 132.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M62.5 121.5L88.5 138.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M167.5 166.5L182.5 192.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M113 166L137 190" stroke="#FF1C63" stroke-width="2"/>
+<path d="M57.5 172.5L85.5 189.5" stroke="#FF1C63" stroke-width="2"/>
+<path d="M7.5 175.5L39.5 184.5" stroke="#FF1C63" stroke-width="2"/>
+</g>
+</svg>

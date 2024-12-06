@@ -1,0 +1,109 @@
+:root {
+  --cursor-size: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: none;
+}
+
+.custom-pointer {
+  position: absolute;
+  left: calc(var(--cursor-size) / -2);
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  -webkit-transition: 500ms, -webkit-transform 100ms;
+  transition: 500ms, -webkit-transform 100ms;
+  transition: 500ms, transform 100ms;
+  transition: 500ms, transform 100ms, -webkit-transform 100ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 99999999999999;
+}
+
+.custom-pointer .inner {
+  fill: #f2f5f8;
+}
+
+.custom-pointer .outer {
+  fill: #111920;
+}
+
+.text-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-section p {
+  color: #4479ed22;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.text-section p:hover {
+  color: #4479ed44;
+}
+
+.text-section .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  border: 1px solid #4479ed22;
+  border-radius: 8px;
+  color: #4479ed;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.text-section .button:hover {
+  background-color: #4479ed;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .custom-pointer {
+    display: none;
+  }
+
+}

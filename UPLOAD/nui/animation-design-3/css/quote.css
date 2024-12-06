@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: #101010;
+  font-family: Inter, sans-serif;
+  color: #2c3345;
+  overflow-x: hidden;
+}
+
+.form-div {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.form-div .main-form {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  max-width: 752px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+  margin-top: 13rem;
+}
+
+.form-div .main-form .heading-t {
+  margin-bottom: 3rem;
+}
+
+.form-div .main-form .heading-t h2 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  color: #2c3345;
+
+}
+
+.form-div .main-form form {
+  padding: 2rem;
+}
+
+.form-div .main-form form hr {
+  border-top: 1px solid #8c8b8b;
+  opacity: 0.1;
+}
+
+.form-div .main-form form .form-item {
+  margin-top: 3rem;
+  font-size: 2.3rem !important;
+}
+
+.form-div .main-form form .form-item .input-box {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+.form-div .main-form form .form-item .input-box #ifYes {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.form-div .main-form form .form-item .input-box #txtPhone {
+  padding: 2rem 5rem;
+  width: 100%;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li {
+  display: inline;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #adadad;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li label {
+  padding: 0.5rem 3rem;
+  cursor: none;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li input[type="checkbox"]:checked+label::before {
+  content: "\f00c";
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li input[type="checkbox"]:checked+label {
+  background-color: #303030;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.form-div .main-form form .form-item .input-box .checkbox-container li input[type="checkbox"]:focus+label {
+  border: 2px solid rgba(139, 139, 139, 0.3);
+}
+
+.form-div .main-form form .form-item .input-box label {
+  font-weight: 500;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-div .main-form form .form-item .input-box input {
+  height: 4rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #5151515e;
+  font-family: "Inter", sans-serif;
+  padding: 0 1rem;
+}
+
+.form-div .main-form form .form-item .input-box textarea {
+  height: 9rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #5151515e;
+  font-family: "Inter", sans-serif;
+  padding: 1rem;
+  padding-top: 1rem;
+  resize: vertical;
+  padding-top: 0;
+}
+
+.form-div .main-form form .form-item .input-box select {
+  height: 5rem;
+  background: none;
+  border-radius: 0.4rem;
+  border: 1px solid #5151515e;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.form-div .main-form form .form-item button {
+  width: 100%;
+  height: 4.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  background: #101010;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: none;
+}
+
+.form-div .main-form form .form-item button:hover {
+  background: #202020;
+}

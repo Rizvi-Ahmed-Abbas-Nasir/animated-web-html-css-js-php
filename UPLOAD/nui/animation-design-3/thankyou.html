@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response Recorded</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+    <!-- custom cursor style sheet -->
+    <link rel="stylesheet" href="css/cursor.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        background: linear-gradient(to bottom, #ffffff 0%, #e1e8ed 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e8ed', GradientType=0);
+        height: 100vh;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+    .wrapper-1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-2 {
+        padding: 30px;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 4em;
+        letter-spacing: 3px;
+        color: #101010;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .wrapper-2 p {
+        margin: 0;
+        font-size: 1.3em;
+        color: #aaa;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .go-home {
+        color: #fff;
+        background: #101010;
+        border: none;
+        padding: 10px 50px;
+        margin: 30px 0;
+        border-radius: 30px;
+        text-transform: capitalize;
+        box-shadow: 0 10px 16px 1px rgba(26, 26, 26, 0.219);
+    }
+
+    button a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @media (min-width:360px) {
+        h1 {
+            font-size: 4.5em;
+        }
+
+        .go-home {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width:600px) {
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .wrapper-1 {
+            height: initial;
+            max-width: 620px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 13px 15px 22px 0px rgba(0, 0, 0, 0.35);
+            -webkit-box-shadow: 13px 15px 22px 0px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 13px 15px 22px 0px rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- 
+			=============================================
+				custom cursor
+			============================================== 
+			-->
+
+    <div class="custom-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path class="inner"
+                d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z" />
+            <path class="outer"
+                d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z" />
+        </svg>
+    </div>
+
+
+    <div class=content>
+        <div class="wrapper-1">
+            <div class="wrapper-2">
+                <h1>Thank you !</h1>
+                <p>Thanks For Contacting! We'll get back to you soon. </p>
+                <p>The Response has been recorded, Our managers will be in touch with you soon! </p>
+                <button class="go-home">
+                    <a href="index.html">go home </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CustomCursor -->
+    <script src="js/cursor.js" "></script>
+    
+    <script>
+        setTimeout(function () {
+            window.location.href = " index.html";
+        }, 5000); </script>
+</body>
+
+</html>

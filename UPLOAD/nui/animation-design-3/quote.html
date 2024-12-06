@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Want-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote • Clever Studio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="56x56" href="./images/fav-icon/cleverstudio_32x32.png" />
+  <!-- Main style sheet -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
+  <!-- responsive style sheet -->
+  <link rel="stylesheet" type="text/css" href="./css/responsive.css" media="all" />
+  <!-- custom cursor style sheet -->
+  <link rel="stylesheet" href="./css/cursor.css" />
+  <!-- Quote Page style sheet -->
+  <link rel="stylesheet" href="./css/quote.css" />
+</head>
+
+<body>
+
+  <!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+  <header class="theme-main-menu sticky-menu theme-menu-one">
+    <div class="inner-content">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="logo"><a href="index.html"><img src="./images/logo/top_icon_updated2.png" alt="" width="127px"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="d-block d-lg-none">
+                <div class="logo"><a href="#"><img src="../images/logo/top_icon_updated2.png" alt=""
+                      width="127px"></a></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.cleverstudio.com/about-us.html">About
+                  Us</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="www.cleverstudio.com/portfolio.html">Portfolio</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="www.cleverstudio.com/team.html">Our
+                  Team</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="www.cleverstudio.com/contact.html">Contact</a>
+
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+
+    </div> <!-- /.inner-content -->
+  </header> <!-- /.theme-main-menu -->
+
+  <!-- 
+			=============================================
+				custom cursor
+			============================================== 
+			-->
+
+  <div class="custom-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path class="inner"
+        d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z" />
+      <path class="outer"
+        d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z" />
+    </svg>
+  </div>
+
+  <div class="form-div">
+    <div class="main-form">
+      <form autocomplete="on" action="/php/quote.php" method="POST">
+        <!-- Form Heading  -->
+        <div class="heading-t">
+          <h2>Get a Quote • CleverStudio</h2>
+        </div>
+        <hr />
+
+        <div class="form-item">
+          <!-- Project Title  -->
+          <div class="project-title-div input-box">
+            <label>Project Title</label>
+            <input id="project-title" name="project-title" type="text" required
+              placeholder="Enter Your Project Title" />
+          </div>
+
+          <!-- Client / Brand Name   -->
+          <div class="client-brand-div input-box">
+            <label>Client / Brand Name </label>
+            <input id="client-brand" name="client-brand" type="text" required placeholder="Enter Client / Brand Name" />
+          </div>
+
+          <!-- Email Address  -->
+          <div class="email-div input-box">
+            <label>Email</label>
+            <input id="email" name="email" type="email" required placeholder="Enter Your Email" />
+          </div>
+
+          <!-- Contact Number -->
+          <div class="contact-number-div input-box">
+            <label> Contact Number</label>
+            <input name="contact-number" type="tel" id="txtPhone" class="txtbox" maxlength="15" />
+          </div>
+
+          <!-- Type of Project   -->
+          <div class="type-of-project-div input-box">
+            <label>Type Of Project</label>
+            <select class="menu-1" name="type-of-project" size="1" required onchange="yesnoCheck(this);">
+              <option value="unselected" selected>Select</option>
+              <option value="Newly-Open">Newly Opened</option>
+              <option value="Rebranding">Rebranding</option>
+              <option value="Improvement">Improvement</option>
+              <option value="Expansion">Expansion</option>
+              <option value="International-Expansion">
+                International Expansion
+              </option>
+              <option value="other">Other</option>
+            </select>
+            <div id="ifYes" style="display: none">
+              <label for="other-type">Specify Project Type</label>
+              <input type="text" id="car" name="other-type" /><br />
+            </div>
+          </div>
+
+          <!-- size of company   -->
+          <div class="checkbox-div input-box">
+            <label>Size Of Company</label>
+            <select class="menu-1" name="size-of-company" size="1" required>
+              <option value="unselected" selected>Select</option>
+              <option value="less-than-10">Less than 10</option>
+              <option value="10-20">10-20</option>
+              <option value="20-40">20-40</option>
+              <option value="More-than-50">More than 50</option>
+            </select>
+          </div>
+
+          <!-- Project Brief Info  -->
+          <div class="brief-info-div input-box">
+            <label>Project Brief Info </label>
+            <textarea name="brief-info-text" required placeholder="Required information about project"></textarea>
+          </div>
+
+          <!-- Brand / Company Niche -->
+          <div class="brand-Niece-info-div input-box">
+            <label>Brand / Company Niche </label>
+            <textarea name="brand-Niece-info" cols="30" rows="10" required
+              placeholder="What your company do? (In short)"></textarea>
+          </div>
+
+          <!-- Target Audience  -->
+          <div class="target-audience-div input-box">
+            <label for="target-audience">Target Audience </label>
+            <textarea name="target-audience" id="" cols="30" rows="10" required
+              placeholder="What type of audience your brand mostly targets?"></textarea>
+          </div>
+
+          <!-- What are the product you sell?  -->
+          <div class="product-div input-box">
+            <label for="product-type">What are the product you sell?</label>
+            <textarea name="product-type" id="" cols="30" rows="10"
+              placeholder="What types of products / services customer likes to purchase from you?"></textarea>
+          </div>
+
+          <!-- Minimum Budget -->
+          <div class="min-budget-div input-box">
+            <label for="min-budget">Minimum Budget for this project?</label>
+            <textarea name="min-budget" id="" cols="30" rows="10" required
+              placeholder="Minimum Budget decided by your team for this particular project."></textarea>
+          </div>
+
+          <!-- Maximum Budget -->
+          <div class="max-budget-div input-box">
+            <label for="max-budget">Maximum Budget for this project?</label>
+            <textarea name="max-budget" id="" cols="30" rows="10" required
+              placeholder="Maximum Budget decided by your team for this particular project."></textarea>
+          </div>
+
+          <!-- Requirements - Graphics  -->
+          <div class="graphics-div input-box">
+            <label>Requirements - Graphics</label>
+            <ul class="checkbox-container">
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="Logo" value="Logo" />
+                <label for="Logo">Logo</label>
+              </li>
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="Posters" value="Posters" />
+                <label for="Posters">Posters</label>
+              </li>
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="Presentation" value="Presentation" />
+                <label for="Presentation">Presentation</label>
+              </li>
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="Mock-Ups" value="Mock-Ups" />
+                <label for="Mock-Ups">Mock-Ups</label>
+              </li>
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="Graphics" value="Graphics" />
+                <label for="Graphics">Graphics</label>
+              </li>
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="Visiting-card" value="Visiting-card" />
+                <label for="Visiting-card">Visiting card</label>
+              </li>
+              <li>
+                <input name="graphics-checkbox[]" type="checkbox" id="graphics-other" value="graphics-other" />
+                <label for="graphics-other">Other</label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Requirements - VFX  -->
+          <div class="vfx-div input-box">
+            <label>Requirements - VFX</label>
+            <ul class="checkbox-container">
+              <li>
+                <input name="vfx-checkbox[]" type="checkbox" id="Intro(s)" value="Intro(s)" />
+                <label for="Intro(s)">Intro(s)</label>
+              </li>
+              <li>
+                <input name="vfx-checkbox[]" type="checkbox" id="Teaser(s)" value="Teaser(s)" />
+                <label for="Teaser(s)">Teaser(s)</label>
+              </li>
+              <li>
+                <input name="vfx-checkbox[]" type="checkbox" id="Infography" value="Infography" />
+                <label for="Infography">Infography</label>
+              </li>
+              <li>
+                <input name="vfx-checkbox[]" type="checkbox" id="Reveals" value="Reveals" />
+                <label for="Reveals">Reveals</label>
+              </li>
+              <li>
+                <input name="vfx-checkbox[]" type="checkbox" id="Video Edit" value="Video Edit" />
+                <label for="Video Edit">Video Edit</label>
+              </li>
+              <li>
+                <input name="vfx-checkbox[]" name="vfx-checkbox" type="checkbox" id="vfx-other" value="vfx-other" />
+                <label for="vfx-other">Other</label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Requirements - Development  -->
+          <div class="development-div input-box">
+            <label>Requirements - Development</label>
+            <ul class="checkbox-container">
+              <li>
+                <input name="Development-checkbox[]" type="checkbox" id="App-Development" value="App-Development" />
+                <label for="App-Development">App Development</label>
+              </li>
+              <li>
+                <input name="Development-checkbox[]" type="checkbox" id="Web-Development" value="Web-Development" />
+                <label for="Web-Development">Web Development</label>
+              </li>
+              <li>
+                <input name="Development-checkbox[]" type="checkbox" id="UI/UX-Development" value="UI/UX-Development" />
+                <label for="UI/UX-Development">UI / UX Development</label>
+              </li>
+              <li>
+                <input name="Development-checkbox[]" type="checkbox" id="PSD/Figma-to-Structural"
+                  value="PSD/Figma-to-Structural" />
+                <label for="PSD/Figma-to-Structural">PSD / Figma to Structural</label>
+              </li>
+              <li>
+                <input name="Development-checkbox[]" name="development-checkbox" type="checkbox" id="development-other"
+                  value="development-other" />
+                <label for="development-other">Other</label>
+              </li>
+            </ul>
+          </div>
+
+          <button value="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+  <footer class="CleverStudio-footer-two pt-150 lg-pt-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-2 mb-40">
+					<div class="logo"><a href="index.html"><img src="images/logo/top_icon_updated2.png" alt=""
+								width="127px"></a>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6 mb-40">
+					<h5 class="title">Visit</h5>
+					<ul class="footer-list style-none">
+						<li><a href="/">Home</a></li>
+						<li><a href="/team.html">Our Team</a></li>
+						<li><a href="/about-us.html">About us</a></li>
+						<li><a href="/portfolio.html">Works</a></li>
+
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 mb-40">
+					<h5 class="title">Legal</h5>
+					<ul class="footer-list style-none">
+						<li><a href="/terms-of-use.html">Terms of use</a></li>
+						<li><a href="/terms-and-condition.html">Terms & conditions</a></li>
+						<li><a href="/privacy-policy.html">Privacy policy</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-40">
+					<div class="newsletter">
+						<h5 class="title">Get a Quote</h5>
+						<p>Explore top services by CleverStudio</p>
+						<form action="/services.html" target = "_blank">
+							<button class="dark-btn" style="cursor: none;">Explore Services
+							</button>
+						</form>
+						<div class="info">Visit to choose from top services!</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="bottom-footer">
+				<div class="row">
+					<div class="col-lg-4 order-lg-1 mb-15">
+						<ul class="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
+							<li><a href="/contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 order-lg-3 mb-15">
+						<ul class="d-flex justify-content-center justify-content-lg-end social-icon style-none">
+							<li><a href="https://www.instagram.com/cleverstudio.in" target="_blank"><i
+										class="fab fa-instagram"></i></a>
+							</li>
+							<li><a href="https://github.com/Project-Clever-Studio" target="_blank"><i
+										class="fab fa-github"></i></a>
+							</li>
+							<li><a href="https://discord.gg/cJjDTMPPWF" target="_blank"><i
+										class="fab fa-discord"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 order-lg-2 mb-15">
+						<p class="copyright text-center">© 2021 - 2022 Clever Studios. All
+							Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+  <button class="scroll-top" style="cursor: none;">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- CustomCursor -->
+  <script src="js/cursor.js"></script>
+
+  <script src="vendor/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS js -->
+  <script src="vendor/aos-next/dist/aos.js"></script>
+  <!-- Slick Slider -->
+  <script src="vendor/slick/slick.min.js"></script>
+  <!-- js Counter -->
+  <script src="vendor/jquery.counterup.min.js"></script>
+  <script src="vendor/jquery.waypoints.min.js"></script>
+  <!-- Fancybox -->
+  <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="vendor/animated-headline-master/main.js"></script>
+  <!-- validator js -->
+  <script src="vendor/validator.js"></script>
+
+  <!-- Theme js -->
+  <script src="js/theme.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+
+  <script>
+    function yesnoCheck(that) {
+      if (that.value == "other") {
+        document.getElementById("ifYes").style.display = "flex";
+      } else {
+        document.getElementById("ifYes").style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    $(function () {
+      $("#country").change(function () {
+        let countryCode = $(this)
+          .find("option:selected")
+          .data("country-code");
+        let value = "+" + $(this).val();
+        $("#txtPhone").val(value).intlTelInput("setCountry", countryCode);
+      });
+
+      var code = "+91 ";
+      $("#txtPhone").val(code).intlTelInput();
+    });
+  </script>
+</body>
+
+</html>
